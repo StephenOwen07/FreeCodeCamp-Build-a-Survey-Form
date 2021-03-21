@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">  
+</head> 
+<body>
+
+  <section class="Intro">
+    <h1 id="title" class="Intro__title">Employment Application Form</h1>
+    <p id="description" class="Intro__description">We're looking for a talented marketer to be our next VP of marketing. Fill in the form below and we'll get back to you.</p>
+  </section>
+
+  <section class="Form">
+
+    <form id="survey-form" class="Form__register">
+      <label id="name-label" class="Form__label">Full name</label>
+      <input id="name" class="Form__input" type="text" placeholder="Please enter your full name" required>
+      <label id="email-label" class="Form__label" required>Email</label>
+      <input id="email" class="Form__input" type="email" placeholder="Your email address" required>
+      <label id="number-label" class="Form__label">Age</label>
+      <input id="number" class="Form__input" type="number" placeholder="Please enter your age" min="18" max="70" required>
+
+      <label id="number-label" class="Form__label">What would you look to improve first?</label>
+      <select name="" id="dropdown" class="Form__input Form__dropdown">
+        <option value="">Performance Marketing</option>
+        <option value="">Growth Marketing</option>
+        <option value="">Demand Generation</option>
+        <option value="">Retention Marketing</option>
+        <option value="">Brand Marketing</option>
+      </select>
+
+      <!-- Radio -->
+      <p class="Form__label Form__radio-title" required>What would you look to improve first?</p>
+      <div class="Form__radio-wrapper">
+        <div Form__radio-content>
+          <input class="Form__radio" type="radio" name="skills" value="seo">
+          <label class="Form__radio-label" for="seo">SEO</label>
+        </div>
+        <div Form__radio-content>
+          <input class="Form__radio" type="radio" name="skills" value="ppc">
+          <label class="Form__radio-label" for="ppc">PPC</label>
+        </div>
+
+        <div Form__radio-content>
+          <input class="Form__radio" type="radio" name="skills" value="social">
+          <label class="Form__radio-label" for="social">Social</label>
+        </div>
+
+        <div Form__radio-content>
+          <input class="Form__radio" type="radio" name="skills" value="content">
+          <label class="Form__radio-label" for="content">Content</label>
+        </div>
+
+        <div Form__radio-content>
+          <input class="Form__radio" type="radio" name="skills" value="cro">
+          <label class="Form__radio-label" for="cro">CRO</label>
+         </div>
+    </div>
+
+    <!-- Checkbox -->
+    <p class="Form__label Form__radio-title" required>Select What Martech you require?</p>
+    <div class="Form__radio-wrapper">
+
+      <div Form__radio-content>
+        <input class="Form__radio" type="checkbox" name="skills" value="hubspot">
+        <label class="Form__radio-label" for="hubspot">Hubspot</label>
+      </div>
+
+      <div Form__radio-content>
+        <input class="Form__radio" type="checkbox" name="skills" value="heap">
+        <label class="Form__radio-label" for="heap">Heap</label>
+      </div>
+
+      <div Form__radio-content>
+        <input class="Form__radio" type="checkbox" name="skills" value="drift">
+        <label class="Form__radio-label" for="drift">Drift</label>
+      </div>
+
+      <div Form__radio-content>
+        <input class="Form__radio" type="checkbox" name="skills" value="semrush">
+        <label class="Form__radio-label" for="semrush">SEMRUSH</label>
+      </div>
+
+      <div Form__radio-content>
+        <input class="Form__radio" type="checkbox" name="skills" value="typeform">
+        <label class="Form__radio-label" for="typeform">Typeform</label>
+      </div>
+
+    </div>
+
+    <p class="Form__label Form__radio-title" required>Tell us why we should hire you to run our marketing department?</p>
+    <textarea class="Form__text-area" id=""></textarea>
+
+
+    <button id="submit" class="Form__submit-btn">Submit</button>
+    </form>
+
+
+  </section>
+  
+  
+</body>
+</html>
